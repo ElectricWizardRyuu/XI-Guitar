@@ -23,9 +23,6 @@ iOS 10.0以上がインストールされたデバイスまたはシミュレー
 インストール方法
 リポジトリをクローンまたはダウンロードします。
 
-bash
-复制
-编辑
 git clone https://github.com/yourusername/Guitar.git
 Xcodeでプロジェクトを開きます。
 
