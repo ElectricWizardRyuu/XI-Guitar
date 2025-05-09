@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guitar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GuitarViewController" customModule="Guitar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qe-hr-1Hm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guitar" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-q6-hL8">
+                                        <rect key="frame" x="44" y="44" width="287" height="1805.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Q01-q6-hL8" secondAttribute="height" multiplier="79:497" id="MKD-x5-Jiq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yso-Fj-6Tu" userLabel="1" customClass="MusicButton" customModule="Guitar" customModuleProvider="target">
+                                        <rect key="frame" x="44" y="44" width="36.5" height="87"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="button1Down:" destination="BYZ-38-t0r" eventType="touchDown" id="CmQ-pK-Bh2"/>
+                                            <action selector="button1TouchOutSide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKb-re-wTe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vq-9L-oUO" userLabel="3" customClass="MusicButton" customModule="Guitar" customModuleProvider="target">
+                                        <rect key="frame" x="131" y="44" width="51" height="87"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="button3Down:" destination="BYZ-38-t0r" eventType="touchDown" id="TdB-4N-h1a"/>
+                                            <action selector="button4TouchOutSide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="srn-KO-pQu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZt-e7-Aqv" userLabel="2" customClass="MusicButton" customModule="Guitar" customModuleProvider="target">
+                                        <rect key="frame" x="80.5" y="44" width="50.5" height="87"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="button2Down:" destination="BYZ-38-t0r" eventType="touchDown" id="T1p-BR-bHw"/>
+                                            <action selector="button2TouchOutSide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bn-NJ-cDt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Q01-q6-hL8" secondAttribute="bottom" constant="44" id="2jf-oG-ZVH"/>
+                                    <constraint firstItem="9vq-9L-oUO" firstAttribute="top" secondItem="yso-Fj-6Tu" secondAttribute="top" id="2zn-dL-aiz"/>
+                                    <constraint firstItem="yso-Fj-6Tu" firstAttribute="height" secondItem="Q01-q6-hL8" secondAttribute="height" multiplier="24 / 497" id="5Ze-1b-jGv"/>
+                                    <constraint firstItem="9vq-9L-oUO" firstAttribute="width" secondItem="BZt-e7-Aqv" secondAttribute="width" id="8Kq-kv-0ME"/>
+                                    <constraint firstItem="yso-Fj-6Tu" firstAttribute="top" secondItem="Q01-q6-hL8" secondAttribute="top" id="FAP-xR-KW9"/>
+                                    <constraint firstItem="Q01-q6-hL8" firstAttribute="top" secondItem="2Qe-hr-1Hm" secondAttribute="top" constant="44" id="IiJ-vN-hJF"/>
+                                    <constraint firstItem="yso-Fj-6Tu" firstAttribute="leading" secondItem="Q01-q6-hL8" secondAttribute="leading" id="Jj9-Wx-hbd"/>
+                                    <constraint firstItem="Q01-q6-hL8" firstAttribute="leading" secondItem="2Qe-hr-1Hm" secondAttribute="leading" constant="44" id="N3W-nH-ity"/>
+                                    <constraint firstItem="BZt-e7-Aqv" firstAttribute="height" secondItem="yso-Fj-6Tu" secondAttribute="height" id="Srq-os-tcM"/>
+                                    <constraint firstItem="BZt-e7-Aqv" firstAttribute="width" secondItem="Q01-q6-hL8" secondAttribute="width" multiplier="14 / 79" id="XGT-DG-e9Q"/>
+                                    <constraint firstItem="BZt-e7-Aqv" firstAttribute="top" secondItem="yso-Fj-6Tu" secondAttribute="top" id="ey0-qq-LCw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q01-q6-hL8" secondAttribute="trailing" constant="44" id="fLR-GY-d2Z"/>
+                                    <constraint firstItem="yso-Fj-6Tu" firstAttribute="width" secondItem="Q01-q6-hL8" secondAttribute="width" multiplier="10 / 79" id="gaw-IL-pHU"/>
+                                    <constraint firstItem="9vq-9L-oUO" firstAttribute="height" secondItem="yso-Fj-6Tu" secondAttribute="height" id="iCD-vl-WOh"/>
+                                    <constraint firstItem="BZt-e7-Aqv" firstAttribute="leading" secondItem="yso-Fj-6Tu" secondAttribute="trailing" id="s2D-iD-SPF"/>
+                                    <constraint firstItem="9vq-9L-oUO" firstAttribute="leading" secondItem="BZt-e7-Aqv" secondAttribute="trailing" id="z2y-kt-FdS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q01-q6-hL8" secondAttribute="trailing" constant="44" id="7Us-qz-aUF"/>
+                            <constraint firstItem="2Qe-hr-1Hm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E4e-eD-eUn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Qe-hr-1Hm" secondAttribute="trailing" id="FYd-q4-b2b"/>
+                            <constraint firstItem="2Qe-hr-1Hm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nlt-3K-19q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Qe-hr-1Hm" secondAttribute="bottom" id="Yni-T9-xad"/>
+                            <constraint firstItem="Q01-q6-hL8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="tQH-OU-dXR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guitar" id="N1P-4n-e45"/>
+                    <connections>
+                        <outlet property="button02" destination="BZt-e7-Aqv" id="kNy-ty-Mtg"/>
+                        <outlet property="button03" destination="9vq-9L-oUO" id="9Q3-kB-QN1"/>
+                        <outlet property="button1" destination="yso-Fj-6Tu" id="HXE-4j-0CA"/>
+                        <outlet property="guitarImageView" destination="Q01-q6-hL8" id="Vy1-ds-Xg4"/>
+                        <outlet property="scrollView" destination="2Qe-hr-1Hm" id="2iV-a2-rgZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guitar" width="79" height="497"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
